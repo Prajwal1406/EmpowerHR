@@ -1,0 +1,431 @@
+/* General styling for the page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 20px;
+  color: #333;
+  font-size: 28px;
+}
+
+/* Styling for the form container */
+form {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for each form field */
+form div {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+/* Styling for inputs */
+input[type="text"],
+input[type="email"],
+select,
+input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus,
+input[type="file"]:focus {
+  border-color: #4caf50;
+}
+
+/* Styling for radio and checkbox labels */
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+  margin-left: 10px;
+  display: inline-block;
+}
+
+/* Styling for buttons */
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* Styling for the "Go to Employee List" button */
+button[type="button"] {
+  background-color: #2196f3;
+}
+
+button[type="button"]:hover {
+  background-color: #1e88e5;
+}
+
+/* Animation for form container */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+form {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Styling for checkbox and radio buttons */
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 5px;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+/* Styling for image upload field */
+input[type="file"] {
+  padding: 8px;
+  border: none;
+  background-color: #f3f4f6;
+  cursor: pointer;
+}
+
+input[type="file"]:hover {
+  background-color: #e1e1e1;
+}
+
+/* Add some padding to the body */
+body {
+  padding: 20px;
+}
+
+/* Styles for Employee List Page */
+.employee-list-container {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 1200px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+  font-family: "Arial", sans-serif;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.primary-button,
+.secondary-button {
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.primary-button {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.secondary-button {
+  background-color: #2196f3;
+  color: #fff;
+}
+
+.primary-button:hover,
+.secondary-button:hover {
+  transform: translateY(-2px);
+}
+
+.employee-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.employee-table th,
+.employee-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.employee-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.employee-table tbody tr {
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.employee-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.employee-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.edit-button,
+.delete-button {
+  margin: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.edit-button {
+  background-color: #ffc107;
+  color: #fff;
+}
+
+.edit-button:hover {
+  background-color: #e0a800;
+  transform: translateY(-2px);
+}
+
+.delete-button {
+  background-color: #f44336;
+  color: #fff;
+}
+
+.delete-button:hover {
+  background-color: #d32f2f;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .employee-table th,
+  .employee-table td {
+    padding: 10px 8px;
+  }
+
+  .primary-button,
+  .secondary-button {
+    font-size: 0.9em;
+  }
+
+  .edit-button,
+  .delete-button {
+    padding: 4px 8px;
+    font-size: 0.8em;
+  }
+}
+
+/* Styles for Admin Login Page */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #4c8cfa, #6d98e6);
+}
+
+.login-box {
+  width: 400px;
+  padding: 40px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.login-title {
+  text-align: center;
+  font-size: 1.8em;
+  color: #333;
+  margin-bottom: 20px;
+  font-family: "Arial", sans-serif;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #666;
+}
+
+.login-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+.login-input:focus {
+  outline: none;
+  border-color: #4c8cfa;
+  box-shadow: 0 0 8px rgba(76, 140, 250, 0.3);
+}
+
+.login-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4c8cfa;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #3b78e0;
+  transform: translateY(-2px);
+}
+
+.login-button:active {
+  background-color: #2d66c4;
+}
+
+@media (max-width: 600px) {
+  .login-box {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .login-title {
+    font-size: 1.5em;
+  }
+}
+
+/* Styles for Dashboard Page */
+.dashboard-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+}
+
+.dashboard-box {
+  width: 600px;
+  padding: 50px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.dashboard-title {
+  font-size: 2em;
+  color: #424242;
+  margin-bottom: 40px;
+  font-family: "Arial", sans-serif;
+}
+
+.dashboard-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.dashboard-button {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.2em;
+  color: #ffffff;
+  background-color: #42a5f5;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.dashboard-button:hover {
+  background-color: #1e88e5;
+  transform: translateY(-2px);
+}
+
+.dashboard-button:active {
+  background-color: #1565c0;
+}
+
+.logout-button {
+  background-color: #ef5350;
+}
+
+.logout-button:hover {
+  background-color: #e53935;
+}
+
+.logout-button:active {
+  background-color: #c62828;
+}
+
+@media (max-width: 768px) {
+  .dashboard-box {
+    width: 90%;
+    padding: 30px;
+  }
+
+  .dashboard-title {
+    font-size: 1.6em;
+  }
+
+  .dashboard-button {
+    font-size: 1em;
+    padding: 12px;
+  }
+}

@@ -3,7 +3,7 @@ const connectDb = async () => {
   try {
     mongoose
       .connect(
-        "mongodb+srv://kannada:123@employee.eba2c.mongodb.net/interndb?retryWrites=true&w=majority&appName=employee"
+        "mongodb+srv://kannada:***@employee.eba2c.mongodb.net/interndb?retryWrites=true&w=majority&appName=employee"
       )
       .then(console.log("mongoose connected"));
   } catch (err) {
